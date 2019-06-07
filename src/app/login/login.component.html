@@ -1,0 +1,32 @@
+<div class="container login-container">
+  <div class="row">
+    <div class="col-md-6 login-form-1">
+      <img [src]="">
+      <h3>Add any Image here!</h3>
+
+    </div>
+    <div class="col-md-6 login-form-2">
+      <h3>Login</h3>
+      <p>Manage All Your Accounts</p>
+
+      <p id="login-message">{{message}}</p>
+      
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <h6>Username:</h6>
+          <input type="text" class="form-control" placeholder="Username *" formControlName="username" />
+        </div>
+        <div class="form-group">
+          <h6>Password:</h6>
+          <input type="password" class="form-control" placeholder="Password *" formControlName="password" />
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btnSubmit" value="Sign in" />
+        </div>
+        <div class="form-group">
+          <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
